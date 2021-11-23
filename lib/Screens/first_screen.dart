@@ -8,8 +8,6 @@ class  Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 200.0,
-        height: 100.0,
         alignment: Alignment.center,
         color: Colors.deepPurple,
         child: const Text(
@@ -17,8 +15,11 @@ class  Home extends StatelessWidget {
              textDirection: TextDirection.ltr,
            style: TextStyle(
              color: Colors.amber,
-             fontSize: 18,
+             fontSize:28,
              fontWeight: FontWeight.bold,
+             decoration: TextDecoration.none,
+             fontFamily: "Merriweather",
+             fontStyle: FontStyle.italic,
            ),
 
 
@@ -44,3 +45,4 @@ class  Home extends StatelessWidget {
 //images
 //size , margin , padding, ListView, and Floating action button
 //appbar
+//Adding Custom fonts to a projects
