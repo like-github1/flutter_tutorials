@@ -16,20 +16,21 @@ class  Home extends StatelessWidget {
           children: [
             Row(
               children:  <Widget> [
-                Expanded(child: textwdget('solomon')),
-                Expanded(child: textwdget('ABELA')),
-                Expanded(child: textwdget("DAWIT")),
+                Expanded(child: textwdget('sol')),
+                Expanded(child: textwdget('Girma')),
+                Expanded(child: textwdget("teshome")),
               ],
 
             ),
             Row(
               children:  <Widget> [
-                Expanded(child: textwdget('solomon')),
-                Expanded(child: textwdget('ABELA')),
-                Expanded(child: textwdget("DAWIT")),
+                Expanded(child: textwdget('sol')),
+                Expanded(child: textwdget('Girma')),
+                Expanded(child: textwdget("teshome")),
               ],
 
             ),
+            AssetImages(),
           ],
         )
       ),
@@ -42,6 +43,17 @@ class  Home extends StatelessWidget {
   //   return "your Lucky Number is $uniqueNumber";
   // }
 }
+class AssetImages extends StatelessWidget {
+  //AssetImage assetImages= AssetImage('images/IMG_0468.JPG'),
+  @override
+  Widget build(BuildContext context) {
+
+    return Container(
+      child: Image.asset('images/IMG_0468.JPG',width: 250.0,height: 250.0,),
+    );
+  }
+}
+
 //in these section we will learn
 //row and collomun widget
 //text
