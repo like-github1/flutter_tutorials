@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorials/Screens/textwidget.dart';
 
 class  Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -8,22 +9,29 @@ class  Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
+        padding: const EdgeInsets.only(left: 20.0,top: 100.0),
         alignment: Alignment.center,
         color: Colors.deepPurple,
-        child: const Text(
-            "free Containers",
-             textDirection: TextDirection.ltr,
-           style: TextStyle(
-             color: Colors.amber,
-             fontSize:28,
-             fontWeight: FontWeight.bold,
-             decoration: TextDecoration.none,
-             fontFamily: "Merriweather",
-             fontStyle: FontStyle.italic,
-           ),
+        child: Column(
+          children: [
+            Row(
+              children:  <Widget> [
+                Expanded(child: textwdget('solomon')),
+                Expanded(child: textwdget('ABELA')),
+                Expanded(child: textwdget("DAWIT")),
+              ],
 
+            ),
+            Row(
+              children:  <Widget> [
+                Expanded(child: textwdget('solomon')),
+                Expanded(child: textwdget('ABELA')),
+                Expanded(child: textwdget("DAWIT")),
+              ],
 
-        ),
+            ),
+          ],
+        )
       ),
     );
   }
